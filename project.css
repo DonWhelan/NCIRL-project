@@ -1,0 +1,76 @@
+#home1{text-align: center; width:100%; float: left;}
+#logohead{height: 100%; width: 10%;}
+/*START amended typo on "asessment"*/
+#assessment, #learningsupport, #assistivetechnology, #about{color: white; height: 200px; width: 40%; font-weight: bold; border-radius: 25px; border: 2px solid; position: relative; font-family: "Arial", Helvetica, sans-serif; font-size: 24px; text-align: center; background-size: cover; margin-top: 50px; background-repeat: no-repeat;} /*update font-size to 24px as 24 throwing up error in CSS validator*/
+#assessment, #assistivetechnology{clear: both; float:left; margin-left: 75px;}
+#assessment{background-image: url("asessment.jpg");}
+/*END amended typo on "#asessment"*/
+#assistivetechnology{background-image: url("assistivetech.jpg")}
+#learningsupport, #about{clear: right; float:right; margin-right: 75px;}
+#learningsupport{background-image: url("support.jpg");}
+#about{background-image: url("nci1.jpg");}
+#academicsupport, #librarysupport{color: white; font-weight: bold; font-family: "Arial", Helvetica, sans-serif; font-size: 24px; text-align: center; position: relative; background-repeat: no-repeat; background-size: cover; float:left; width: 200px; height: 200px;}
+#academicsupport{background-image: url("asessment.jpg");} /*update font-size to 24px as 24 throwing up error in CSS validator*/
+#librarysupport{clear: left; background-image: url("librarysupport.jpeg"); margin-top: 10px;}
+.banner{background-color: #362881; width: 90%; position: absolute; height: 13%; float: left; position: absolute; margin-left: 4.5%; top: 0px; border-right: 0px solid; border-radius: 0 0 100px 100px / 0 0 25px 25px;}
+.banner2{background-color: #362881; width: 80%; position: relative; height: 10%; top: 75%; float: left;}
+hr{box-shadow: inset 0 12px 12px -12px gray; border: 0; height: 12px;}
+#assessment:hover, #learningsupport:hover, #assistivetechnology:hover, #about:hover{opacity: 0.5; filter: alpha(opacity=30);}
+#academicsupport:hover{background-color: blue; background-image: none;}
+#academicsupport:hover .banner2{display: none;}
+#librarysupport:hover{background-color: green; background-image: none;}
+#librarysupport:hover .banner2{display: none;}
+#search_container1{text-align: center;}
+#search_container{float: left; clear: left; height: 2px;}
+/*transition used to shift placeholder and change styling when search box is active*/
+#searchbox{color: white; width: 215px; padding: 10px 0 10px 15px;  font-family: "Arial", Helvetica, sans-serif; font-size: 18px; background: #362881; border: 0; border-radius: 3px; outline:0; text-indent: 32%; transition: all .3s ease-in-out;}
+#searchbox:focus, #searchbox:active {color: #362881; text-indent: 0; background: #fff;}
+#searchbutton{position: absolute; padding: 3px 3px;} /*update padding to 3px as 3 throwing up error in CSS validator*/
+#searchbox #searchbutton{display: none;}
+#searchbox:focus, #searchbox:active #searchbutton{display: inline;}
+body{background-color:white; font-family:arial; line-height:120%;}
+.bar{float: right;width: 16.9%;height: 25px;background-color: #362881;color: white;border:0px;text-align:center;vertical-align: middle;line-height: 25px;}/*amended .bar width to same as .current to make them same size*/
+.bar:hover{background-color: #9C8AA5;}
+.current{float: right;width: 16.9%;height: 25px;background-color: #9C8AA5;color: white;border: 0px;text-align:center;vertical-align: middle;line-height: 25px;}
+.bar, .current{width:20%;}/*inserted to regulate size of all button hyperlinks in horizontal bar so they fit right across the screen instead of partway*/
+#home:hover{background-color: #9C8AA5;}
+#footer{width: 100%; height: 60px; color: white; float: left; clear: both; background-color: #1E1348;border-radius: 5px;padding-left: 6px;}
+#ftlink{text-align:center;vertical-align: middle;line-height: 30px; margin-left: 40%;}
+/*START formatting hyperlinks in footer*/
+#ftlink a:visited{color:white;}
+#ftlink a:link{color:white;}
+#ftlink a:hover{color:gold;}
+/*END formatting hyperlinks in footer*/
+#logo{width: 100%; float: left; background-image: url("typ1.jpg");background-repeat:no-repeat;background-size:cover;}/*updated with background with "no-repeat" and "cover" to prevent background repeating if screen too wide for banner*/
+#rey{width: 190px; height: 115px; background-color: white;}
+#return{float: left;}
+/*START removal of bullet points for main buttons and dropdown buttons*/
+ul#nav, ul#dropdown{list-style-type:none;}
+ul#nav li{width:175px; text-align:left; position:relative; float:left; clear:left;}
+/*START formatting buttons*/
+ul#nav a{text-decoration:none; display:block; width:100%; height:25px; line-height:25px; background-color:#362881; top:500px; margin:10px; border-radius:5px; text-indent:10px; color:white; padding:15px;}
+/*END formatting buttons*/
+/*START formatting dropdown buttons*/
+/*this keeps second button close to first button of dropdown*/
+ul#nav  #dropdown li{margin-bottom:-22px;}
+/*END formatting dropdown buttons*/
+/*START format of hyperlinks*/
+ul#nav li:hover > a{background-color:#6B006B; color:gold;}
+ul#nav li:hover a:hover{color:gold;}
+/*END format of hyperlinks*/
+/*START positioning of dropdown menu*/
+ul#nav ul#dropdown{display:none;position:absolute;top:0px;left:165px;z-index:1;}
+/*END positioning of dropdown menu*/
+/*START display of dropdown menu*/
+ul#nav li:hover #dropdown{display:inline-block;}
+/*END display of dropdown menu*/
+/*START movement of div containing main buttons and dropdown buttons*/
+#vertical{float:left;}
+/*END movement of div containing main buttons and dropdown buttons*/
+/*START formatting of text*/
+.text, #text{margin-left:50px;padding-left:25px;/*removed padding-right as not required on text div*/background-color:white;height:100%;float:left;border-radius:5px;color:Navy;font-style:normal;font-family:arial;font-size:100%;}
+#text{width:30%;}
+.text{width:70%;}
+h1{margin-top:25px;}/*inserted <article> tag in HTML which ended up changing how h1 behaves*/
+/*END formatting of text*/
+	

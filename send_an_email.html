@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Clinch, Whelan, Yson">
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<title>Send an Email</title>
+		<link rel="stylesheet" type="text/css" href="project.css">
+	
+	<!--START JS form submission box-->
+	<script>
+	function showAlert(){
+		alert('Thank you for your message. We will respond to you soon.');
+		}
+	</script>
+	<!--END of JS form submission box-->
+	
+	<!--START JQuery highlight fields-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color","#FFFF66");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","white");
+  });
+});
+	</script>
+	<!--END JQuery highlight fields-->
+
+	</head>
+	<body>
+			<!--logo-->
+		<nav>
+		<div id = "logo" class="image">
+			<a href="Project.html" id="return">
+				<div id = "rey">
+				<img src="ncilogo.png" alt ="NCI"/>
+				</div>
+			</a>
+		</div>
+		
+		<!--navbar-->
+		<a href="disability_support.html"><div class = "current">	
+			<strong>About Us</strong>
+		</div></a>	
+		
+		<a href="assistive_tech.html"><div class = "bar">
+			<strong>Assistive Technology</strong>			
+		</div></a>	
+		
+		<a href="learning_support.html"><div class = "bar">	
+			<strong>Learning Support</strong>				
+		</div></a>	
+		
+		<a href="needs_assessment.html"><div class = "bar" >
+			<strong>Needs Assessment</strong>			
+		</div></a>
+		
+		<a href="Project.html"><div class = "bar">	
+		<strong>Home</strong>
+		</div></a>
+		</nav>		
+
+		<!--START of div containing vertical menu-->
+		<nav>
+		<div id="vertical">
+			
+			<!--START of vertical menu -->
+			<ul id="nav">
+				<li><a href="how_to_find_us.html">Contact Us</a>
+					<!--START of nested DROPDOWN-->
+					<ul id="dropdown">
+						<li><a href="send_an_email.html">Send an email</a></li>
+						<li><a href="how_to_find_us.html">How to find us</a></li>
+					</ul>
+					<!--END of nested DROPDOWN-->
+				</li>
+				
+			</ul>
+			<!--END of vertical menu-->
+		
+		</div>
+		</nav>
+		<!--END of div containing vertical menu-->
+		
+		<article>
+		<div class="text">
+			<h1>Send an Email</h1>
+			
+			<!--START of form-->
+			<form onsubmit="showAlert()">
+				<p>Please complete the details below:</p>
+				<strong>First Name:</strong>
+				<br>
+				<input type="text" name="firstname" maxlength="20">
+				<br><br>
+				<strong>Last Name:</strong>
+				<br>
+				<input type="text" name="lastname" maxlength="25">
+				<br><br>
+					<!--START of DATA VALIDATION for email-->
+					<strong>Email Address:</strong>
+					<br>
+					<input type="email" name="email" maxlength="35" required="required">
+					<!--END of DATA VALIDATION for email-->
+				<br><br>
+				<strong>Client Type:</strong>
+				<br>
+				<select name="student">
+					<option value="default" selected>Please select...</option>
+					<option value="Prospective Student">Prospective Student</option>
+					<option value="NCI Student">NCI Student</option>
+					<option value="Business">Business Client</option>
+					<option value="International Student">International Student</option>
+				</select>
+				<br><br>
+				<strong>Your Message:</strong>
+				<br>
+				<textarea cols="40" rows="10" placeholder="Type your message here..."></textarea>
+				<br>
+				<input type="checkbox" name="newsletter" value="signup" checked="checked"/>By leaving this box ticked, you are agreeing to receive our newsletter.
+				<br><br>
+				<input type="submit" value="Send">
+				<br><br>
+			</form>	
+			<!--END of form-->
+		</div>	
+		</article>
+		
+		<div id = "footer">
+	
+		<div><!--links open in new window as they direct away from the site-->
+			<a href="https://www.facebook.com/NCIRL" target="_blank"><img src="fb.png" alt ="Facebook"/></a>
+			<a href="https://ie.linkedin.com/edu/national-college-of-ireland-13377" target="_blank"><img src="in.png" alt ="LinkedIn"/></a>
+			<a href="https://twitter.com/ncirl" target="_blank"><img src="twit.png" alt ="Twitter"/></a>
+		</div>	
+		
+		<span id = "ftlink">
+			<a href="https://www.ncirl.ie/Legal/-Company-Registration-Details" target="_blank">Legal</a> | <a href="https://www.ncirl.ie/Legal/Privacy" target="_blank">Privacy</a> | <a href="send_an_email.html">Contact us</a>
+		</span>
+	</div>
+	</body>
+</html>
